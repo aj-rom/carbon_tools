@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative '../lib/carbon_tools'
+require_relative '../lib/carbon_tools/conversion_helper'
+require 'bundler/setup'
+
+# CarbonTools::CLI.start load CLI class
+
+converter = CarbonTools::Converter.new
+
+puts '100 mb being converted to'
+puts "#{converter.megabytes_to_bytes(100)} bytes"
