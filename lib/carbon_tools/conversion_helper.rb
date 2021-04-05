@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 module CarbonTools
-  # Class used for handling the conversion of bytes from eachothers sizes, and into CO2
+  # Class used for handling the conversion of bytes from each others sizes, and into CO2
   # This handles the operations for conversion of gigabytes to megabytes to bytes and then into CO2
   class Converter
     AVERAGE_KILO_WATT_HOUR_PER_GB = 1.805
     AVERAGE_CARBON_FACTOR_GRID = 457.0
     MEGABYTE_SIZE = 104_857
-    GIGABYTES_IN_MEGABYTE = 1_024
+    MEGABYTES_IN_GIGABYTE = 1_024
     # add kilobytes and maybe even bit
 
     def megabytes_to_bytes(megabytes)
@@ -15,7 +15,7 @@ module CarbonTools
     end
 
     def gigabytes_to_bytes(gigabytes)
-      megabytes_to_bytes(gigabytes * GIGABYTES_IN_MEGABYTE)
+      megabytes_to_bytes(gigabytes * MEGABYTES_IN_GIGABYTE)
     end
 
     def bytes_to_megabytes(bytes)
@@ -23,7 +23,7 @@ module CarbonTools
     end
 
     def bytes_to_gigabytes(bytes)
-      bytes_to_megabytes(bytes) / GIGABYTES_IN_MEGABYTE
+      bytes_to_megabytes(bytes) / MEGABYTES_IN_GIGABYTE
     end
 
     def byte_to_co2(bytes = 0.0)
