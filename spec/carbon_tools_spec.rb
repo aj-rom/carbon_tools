@@ -10,6 +10,7 @@ RSpec.describe CarbonTools do
 
   # Ensures that we are receiving the correct data from the program (ie: conversion by country & byte )
   describe 'Data Validations' do
+    # TODO: make sure that we can query our databases
   end
 
 end
