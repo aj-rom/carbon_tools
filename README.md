@@ -1,4 +1,4 @@
-# CarbonTools
+# CarbonTools [![Codacy Badge](https://app.codacy.com/project/badge/Grade/587b0989126b444b96197153369c794f)](https://www.codacy.com/gh/aj-rom/carbon_tools/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aj-rom/carbon_tools&amp;utm_campaign=Badge_Grade)
 
 CarbonTools is a ruby gem focused on providing an easy way for developers to calculate the environmental (CO2) cost of *X* amount of bytes used within their program.
 This is heavily inspired from the npm package [carbon-tools](), although is no longer being maintained and thought this could be useful as a gem rather than an npm package. Both for ease of installation to new projects, and expandability of 'hopefully' included databases.
